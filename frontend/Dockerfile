@@ -9,7 +9,7 @@ RUN apk add --no-cache curl \
     ca-certificates \
     ttf-freefont
 
-USER 1001
+#USER 1001
 RUN mkdir -p /app/.next && chmod -R g+rwX /app
 
 WORKDIR /app
