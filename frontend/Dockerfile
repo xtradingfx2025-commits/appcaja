@@ -11,7 +11,7 @@ RUN apk add --no-cache curl \
 
 #USER 1001
 RUN mkdir -p /app
-RUN mkdir -p /app/.next && chmod -R g+rwX 
+RUN mkdir -p /app/.next && chmod -R g+rwX /app
 WORKDIR /app
 
 # Configure Playwright to use system Chromium
